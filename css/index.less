@@ -1,0 +1,171 @@
+body {
+    min-width: 320px;
+    max-width: 750px;
+    margin: 0 auto;
+    background-color: #F2F4F7;
+}
+@media screen and (min-width: 750px) {
+    html {
+        font-size: 37.5px!important;
+    }
+}
+a {
+    text-decoration: none;
+}
+img {
+    vertical-align: middle;
+}
+.wrap {
+    background-color: #fff;
+    margin-bottom: .2667rem;
+}
+.header {
+    height: 2.1333rem;
+    border-bottom: 1px solid #eaeaea;
+    line-height: 2.1333rem;
+    font-size: .9333rem;
+    color: #1C1C1C;
+    text-align: center;
+}
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1.1733rem;
+    a {
+        flex: 33.33%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 1.6rem;
+        img {
+            width: 2.88rem;
+            height: 2.88rem;
+        }
+        span {
+            font-size: .6667rem;
+            color: #707070;
+        }
+    }
+}
+.go {
+    margin: 0 .2667rem 1.1467rem .48rem;
+    img {
+        display: block;
+        width: 100%;
+    }
+}
+.content {
+    padding: 1.0667rem .64rem 0 .5867rem;
+    margin-top: .2667rem;
+    background-color: #fff;
+    .con-hd {
+        display: flex;
+        justify-content: space-between;
+        height: 1.0133rem;
+        line-height: 1.0133rem;
+        margin-bottom: .5333rem;
+        h4 {
+            margin: 0;
+            font-size: .7467rem;
+            color: #333;
+            .icon {
+                display: inline-block;
+                width: 1.0133rem;
+                height: 1.0133rem;
+                vertical-align: middle;
+            }
+        }
+        .more {
+            font-size: .5867rem;
+            color: #999;
+        }
+    }
+}
+.con-bd {
+    position: relative;
+    overflow: hidden;
+    .swiper {
+        width: 14.4rem;    
+        height: 14.4rem;
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        transition: 300ms;
+        transform: scale(0.8);
+        opacity: 0.6;
+        a {
+            display: block;
+            width: 9.0133rem;
+            height: 10.0267rem;
+            img {
+                width: 100%;
+                height: 100%;
+                margin-bottom: .2667rem;
+            }
+            p {
+                font-size: .6667rem;
+                color: #333;
+            }
+        }
+    }
+    --swiper-navigation-color: #000;/* 单独设置按钮颜色 */
+    --swiper-navigation-size: .8rem;/* 设置按钮大小 */
+	.swiper-slide-active,.swiper-slide-duplicate-active{
+      transform: scale(1);
+      opacity: 1;
+	}
+}
+.study_con {
+    .con-bd {
+        margin-top: 1.04rem;
+        .swiper {
+            width: 100%;
+            height: 100%;
+          }
+        .swiper-slide {
+            display: flex;
+            flex-direction: column;
+            font-size: 18px;
+            background: #fff;
+            width: 7.733333rem;
+            height: 9.066667rem;
+            background-color: #fff;
+            border-radius: 0.266667rem;
+            box-shadow: 0 0px 10px rgba(0, 0, 0, 0.1);
+            h5 {
+                font-size: 0.693333rem;
+                margin: 0.533333rem 0;
+                font-weight: 400;
+                padding: 0 0.266667rem;
+            }
+            p {
+                font-size: 0.693333rem;
+                color: #ff4400;
+                padding: 0 0.266667rem;
+              }
+        }
+    
+          .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+    }
+}
